@@ -1,0 +1,41 @@
+*{
+    background-color: #c4dfdf;
+    margin: 0;
+    color: #27374d;
+    
+}
+
+nav li{
+    display: inline;
+    background-color: #9db2bf;
+}
+nav li a{
+    text-decoration: none;
+    padding: 1.5vh 2vh;
+    margin: 2vw;
+}
+
+nav{
+    text-align: center;
+    background-color: #9db2bf;
+    padding: 3vh;
+    padding-top: 4vh;
+    margin-bottom: 6vh;
+}
+ul{
+    padding: 0;
+    background-color: #9db2bf;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    border-top: #9db2bf dashed 2px;
+}
+
+footer img{
+    height: 5vh;
+    padding: 4vh 2vw 1vh;
+}

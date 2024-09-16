@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <title>About Me</title>
+</head>
+<nav>
+    <ul>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="work-experience.html">Work Experience</a></li>
+    </ul>
+</nav>
+<body>
+    <h1 style="margin-left: 12vw;">About Me</h1>
+    <div id="container">
+        <div id="profile">
+            <img src="imgs/profile.jpg" alt="me">
+        </div>
+        <div id="about-me">
+            <p id="about-me-text">Hello! My name is Tia. As a third year student studying computer science, 
+                I am passionate about the growing tech industry, specifically, software development 
+                and AI/machine learning. I am looking for opportunities to expand and apply my current skillset.
+            </p>
+            <div id="hobbies">
+                <p style="border:none">Me in my natural habitat:</p>
+                <div id="image-box">
+                    <img class="images" id="beach" src="imgs/beach.jpg" alt="beach" data-text="Walking along the beach and enjoying the scenary!">
+                    <img class="images" id="bike" src="imgs/bike.jpg" alt="bike" data-text="Feel the cool breeze as I bike around the city!">
+                    <img class="images" id="chess" src="imgs/chess.jpg" alt="chess" data-text="Endulge in anything chess related. I've been playing since I was a kid!">
+                    <img class="images" id="coffee" src="imgs/coffee.jpg" alt="coffee" data-text="Nothing better than to savor a good cup of coffee.">
+                    <img class="images" id="dog" src="imgs/dog.jpg" alt="dog" data-text="Scroll through media filled with cute animals.">
+                    <img class="images" id="guitar" src="imgs/guitar.jpg" alt="guitar" data-text="I'm trying to learn how to play the guitar. Someone teach me T^T.">
+                    <img class="images" id="hotpot" src="imgs/hotpot.jpg" alt="hotpot" data-text="Asian cuisines are the best. My top fav is hotpot.">
+                    <img class="images" id="peace" src="imgs/peace.jpg" alt="peace" data-text="Spending some time alone to decompress.">
+                    <img class="images" id="pingpong" src="imgs/pingpong.jpg" alt="ping pong" data-text="Super fun and strategic sport I picked up in high school.">
+                </div>
+            </div> 
+        </div>
+    </div>
+    </body>
+    <footer>
+        <a href="https://github.com/tiazheng04"><img src="imgs/github.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/tia-zheng-157786267/"><img src="imgs/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.instagram.com/tia.zheng/"><img src="imgs/insta.png" alt="instagram"></a>
+        <a href="credits.html"><img src="imgs/credit.png" alt="credits"></a>
+    </footer>
+    
+    <script>
+        // Get all the images
+        const images = document.querySelectorAll('#image-box .images');
+        const aboutMeText = document.getElementById('about-me-text');
+
+        // Add event listeners for mouseover and mouseout
+        images.forEach(image => {
+            image.addEventListener('mouseover', function() {
+                // Change text when an image is hovered over
+                aboutMeText.textContent = this.getAttribute('data-text');
+            });
+
+            image.addEventListener('mouseout', function() {
+                // Reset text when mouse leaves the image
+                aboutMeText.textContent = 'Hello! My name is Tia. As a third year student studying computer science, I am passionate about the growing tech industry, specifically, software development and AI/machine learning. I am looking for opportunities to expand and apply my current skillset.';
+            });
+        });
+    </script>
+</html>

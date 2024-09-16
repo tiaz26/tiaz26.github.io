@@ -1,0 +1,85 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    padding-top: 4vw;
+    border: #9db2bf dashed 2px;
+    border-left: none;
+    border-right: none;
+    align-items: center;;
+}
+#profile{
+    width: 28vw;
+    height:70vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 5vw;
+
+
+
+}
+#profile img{
+    width: 26vw;
+    object-fit: cover;
+}
+#about-me{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50vw;
+    align-items: center;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    padding: 1vh;
+    border: 1px solid ;
+    margin: 0.5vh;
+}
+
+#image-box{
+    height: 52vh;
+    width: 42vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    position: relative;
+}
+
+.images{
+    position: relative;
+    display: inline-block;
+    width: 13vw;
+    height: 8vw;
+    border: 1px solid black;
+    filter: blur(0.7px) grayscale(50%);
+    z-index: 1; 
+    overflow: hidden;
+    transition: transform 0.3s ease, z-index 0s;
+}
+
+.images:hover{
+    filter: none;;
+    transform: scale(1.5);
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#about-me-text{
+    padding: 1vh 0; 
+    text-align: center;
+    width:42vw; 
+    height:12vh;
+    background-color: #d5e9f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+

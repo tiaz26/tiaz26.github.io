@@ -1,0 +1,44 @@
+#assignment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vw;
+    padding-top: 4vw;
+    border: #9db2bf dashed 2px;
+    border-left: none;
+    border-right: none;
+    align-items: center;;
+}
+
+/* General reset for button styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.github-button:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+.assignments{
+    border: solid 1px #333;
+    padding: 3vw;
+}
+.assignments p{
+    margin: 3vh 0;
+}

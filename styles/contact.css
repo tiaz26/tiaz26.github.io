@@ -1,0 +1,39 @@
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2vw;
+    padding-top: 4vw;
+    border: #9db2bf dashed 2px;
+    border-left: none;
+    border-right: none;
+    align-items: center;;
+}
+
+#contact-container img{
+    width: 75vw;
+    height: 70vh;
+}
+
+.contact-here{
+    width: 25vw;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-here ul{
+    list-style-type: none;
+}
+
+#contact-me{
+    display: flex;
+}
+
+.map{
+    width: 100%;
+    max-width: 25vw;
+    max-height: 40vh;
+}
